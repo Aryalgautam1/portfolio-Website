@@ -1,0 +1,529 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #38d39f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav .contact-button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro .profile-pic {
+    border-radius: 50%;
+    border: 5px solid #38d39f;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 20px 0 10px;
+}
+
+.intro .highlight {
+    color: #38d39f;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.project, art   icle {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 20px;
+    background-color: #38d39f;
+    text-align: center;
+    color: #000;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#chat-button {
+    background-color: #38d39f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-box {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chat-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px;
+    background-color: #38d39f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#projects {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/*for blog 
+
+
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#blog {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#blog h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#blog p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* for about me 
+
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific styles for the About Me section */
+#about-me .about-content {
+    display: flex;
+    justify-content: center;
+}
+
+#about-me .about-card {
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-details {
+    text-align: left;
+}
+
+.about-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.about-details h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-details p, .about-details ul {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-details a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.about-details a:hover {
+    text-decoration: underline;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styles for Projects and Blog sections */
+.project-grid, .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-card, .blog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.project-card:hover, .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.project-card h2, .blog-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p, .blog-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+/* for media 
+
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.media-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.media-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2em;
+}
+
+.media-category {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.videos { background-color: #f9f9f9; }
+.images { background-color: #e0f7fa; }
+.graphics { background-color: #f1f8e9; }
+.publications { background-color: #fff3e0; }
+.social-media { background-color: #e1bee7; }
+.press { background-color: #ffebee; }
+.interactive { background-color: #e3f2fd; }
+.downloads { background-color: #f0f4c3; }
+
+.media-category h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.media-item {
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.media-item video,
+.media-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.media-item p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.media-item a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.media-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.media-item:hover {
+    transform: scale(1.05);
+}

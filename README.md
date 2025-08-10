@@ -1,2 +1,2 @@
 # portfolio-Website
-# Newly bulit website, I am adding my projects over here.
+# Newly built website, I am adding my projects over here.
